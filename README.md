@@ -32,8 +32,8 @@ You must have a default gpg keypair configured with a password. This is the pass
    git clone https://github.com/thehunmonkgroup/poor-mans-mfa.git
    ```
 2. Optionally
-  * Add the script directory to your PATH for easy access.
-  * Add one of the completions files for CLI completion of secret names
+  * Add the script directory to your `PATH` for easy access.
+  * Add one of the completions files for CLI completion of secret names (`pmmfa` must be in your `PATH` for completions to work)
 
 ## Usage
 
