@@ -2,10 +2,10 @@
 
 _poor_mans_mfa() {
   local -a commands
-  commands=("${(@f)$(poor-mans-mfa.sh -c "${words[2]}")}")
+  commands=("${(@f)$(pmmfa -c "${words[2]}")}")
   _describe 'command' commands
 }
 
-compdef _poor_mans_mfa poor-mans-mfa.sh
+compdef _poor_mans_mfa pmmfa
 
 # vi: ft=zsh

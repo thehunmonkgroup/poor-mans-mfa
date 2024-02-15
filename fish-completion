@@ -2,9 +2,9 @@
 
 function __fish_poor_mans_mfa_complete
   set -l cur (commandline -ct)
-  poor-mans-mfa.sh -c "$cur"
+  pmmfa -c "$cur"
 end
 
-complete -f -c poor-mans-mfa.sh -a '(__fish_poor_mans_mfa_complete)'
+complete -f -c pmmfa -a '(__fish_poor_mans_mfa_complete)'
 
 # vi: ft=fish

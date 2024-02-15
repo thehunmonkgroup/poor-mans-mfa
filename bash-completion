@@ -2,9 +2,9 @@
 
 _poor_mans_mfa_completion() {
   local cur=${COMP_WORDS[COMP_CWORD]}
-  COMPREPLY=($(poor-mans-mfa.sh -c "${cur}"))
+  COMPREPLY=($(pmmfa -c "${cur}"))
 }
 
-complete -F _poor_mans_mfa_completion poor-mans-mfa.sh
+complete -F _poor_mans_mfa_completion pmmfa
 
 # vi: ft=bash
