@@ -183,6 +183,7 @@ interactive_mode() {
 }
 
 loop_mode() {
+  echo "To exit, just hit Enter/Return."
   while true; do
     echo -n "Enter Name: "
     read -r name
